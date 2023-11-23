@@ -1,0 +1,311 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: gtd_dashboard
+model: gtd_model
+timeseries: ""
+measures:
+  - label: Total records
+    expression: count(*)
+    name: total_records
+    description: Total number of records present
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(latitude)
+    expression: sum(latitude)
+    name: sum(latitude)
+    description: Sum of Latitude
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(longitude)
+    expression: sum(longitude)
+    name: sum(longitude)
+    description: Sum of Longitude
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(nperpcap)
+    expression: sum(nperpcap)
+    name: sum(nperpcap)
+    description: Sum of Nperpcap
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(nwound)
+    expression: sum(nwound)
+    name: sum(nwound)
+    description: Sum of Nwound
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(propvalue)
+    expression: sum(propvalue)
+    name: sum(propvalue)
+    description: Sum of Propvalue
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(nhours)
+    expression: sum(nhours)
+    name: sum(nhours)
+    description: Sum of Nhours
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(ransomamt)
+    expression: sum(ransomamt)
+    name: sum(ransomamt)
+    description: Sum of Ransomamt
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(ransomamtus)
+    expression: sum(ransomamtus)
+    name: sum(ransomamtus)
+    description: Sum of Ransomamtus
+    format_preset: humanize
+    valid_percent_of_total: true
+  - label: Sum(ransompaid)
+    expression: sum(ransompaid)
+    name: sum(ransompaid)
+    description: Sum of Ransompaid
+    format_preset: humanize
+    valid_percent_of_total: true
+dimensions:
+  - name: approxdate
+    label: Approxdate
+    column: approxdate
+    description: ""
+  - name: resolution
+    label: Resolution
+    column: resolution
+    description: ""
+  - name: country_txt
+    label: Country_txt
+    column: country_txt
+    description: ""
+  - name: region_txt
+    label: Region_txt
+    column: region_txt
+    description: ""
+  - name: provstate
+    label: Provstate
+    column: provstate
+    description: ""
+  - name: city
+    label: City
+    column: city
+    description: ""
+  - name: location
+    label: Location
+    column: location
+    description: ""
+  - name: summary
+    label: Summary
+    column: summary
+    description: ""
+  - name: alternative_txt
+    label: Alternative_txt
+    column: alternative_txt
+    description: ""
+  - name: attacktype1_txt
+    label: Attacktype1_txt
+    column: attacktype1_txt
+    description: ""
+  - name: attacktype2_txt
+    label: Attacktype2_txt
+    column: attacktype2_txt
+    description: ""
+  - name: attacktype3_txt
+    label: Attacktype3_txt
+    column: attacktype3_txt
+    description: ""
+  - name: targtype1_txt
+    label: Targtype1_txt
+    column: targtype1_txt
+    description: ""
+  - name: targsubtype1_txt
+    label: Targsubtype1_txt
+    column: targsubtype1_txt
+    description: ""
+  - name: corp1
+    label: Corp1
+    column: corp1
+    description: ""
+  - name: target1
+    label: Target1
+    column: target1
+    description: ""
+  - name: natlty1_txt
+    label: Natlty1_txt
+    column: natlty1_txt
+    description: ""
+  - name: targtype2_txt
+    label: Targtype2_txt
+    column: targtype2_txt
+    description: ""
+  - name: targsubtype2_txt
+    label: Targsubtype2_txt
+    column: targsubtype2_txt
+    description: ""
+  - name: corp2
+    label: Corp2
+    column: corp2
+    description: ""
+  - name: target2
+    label: Target2
+    column: target2
+    description: ""
+  - name: natlty2_txt
+    label: Natlty2_txt
+    column: natlty2_txt
+    description: ""
+  - name: targtype3_txt
+    label: Targtype3_txt
+    column: targtype3_txt
+    description: ""
+  - name: targsubtype3_txt
+    label: Targsubtype3_txt
+    column: targsubtype3_txt
+    description: ""
+  - name: corp3
+    label: Corp3
+    column: corp3
+    description: ""
+  - name: target3
+    label: Target3
+    column: target3
+    description: ""
+  - name: natlty3_txt
+    label: Natlty3_txt
+    column: natlty3_txt
+    description: ""
+  - name: gname
+    label: Gname
+    column: gname
+    description: ""
+  - name: gsubname
+    label: Gsubname
+    column: gsubname
+    description: ""
+  - name: gname2
+    label: Gname2
+    column: gname2
+    description: ""
+  - name: gsubname2
+    label: Gsubname2
+    column: gsubname2
+    description: ""
+  - name: gname3
+    label: Gname3
+    column: gname3
+    description: ""
+  - name: gsubname3
+    label: Gsubname3
+    column: gsubname3
+    description: ""
+  - name: motive
+    label: Motive
+    column: motive
+    description: ""
+  - name: claimmode_txt
+    label: Claimmode_txt
+    column: claimmode_txt
+    description: ""
+  - name: claimmode2_txt
+    label: Claimmode2_txt
+    column: claimmode2_txt
+    description: ""
+  - name: claimmode3_txt
+    label: Claimmode3_txt
+    column: claimmode3_txt
+    description: ""
+  - name: weaptype1_txt
+    label: Weaptype1_txt
+    column: weaptype1_txt
+    description: ""
+  - name: weapsubtype1_txt
+    label: Weapsubtype1_txt
+    column: weapsubtype1_txt
+    description: ""
+  - name: weaptype2_txt
+    label: Weaptype2_txt
+    column: weaptype2_txt
+    description: ""
+  - name: weapsubtype2_txt
+    label: Weapsubtype2_txt
+    column: weapsubtype2_txt
+    description: ""
+  - name: weaptype3_txt
+    label: Weaptype3_txt
+    column: weaptype3_txt
+    description: ""
+  - name: weapsubtype3_txt
+    label: Weapsubtype3_txt
+    column: weapsubtype3_txt
+    description: ""
+  - name: weaptype4_txt
+    label: Weaptype4_txt
+    column: weaptype4_txt
+    description: ""
+  - name: weapsubtype4_txt
+    label: Weapsubtype4_txt
+    column: weapsubtype4_txt
+    description: ""
+  - name: weapdetail
+    label: Weapdetail
+    column: weapdetail
+    description: ""
+  - name: propextent_txt
+    label: Propextent_txt
+    column: propextent_txt
+    description: ""
+  - name: propcomment
+    label: Propcomment
+    column: propcomment
+    description: ""
+  - name: divert
+    label: Divert
+    column: divert
+    description: ""
+  - name: kidhijcountry
+    label: Kidhijcountry
+    column: kidhijcountry
+    description: ""
+  - name: ransomnote
+    label: Ransomnote
+    column: ransomnote
+    description: ""
+  - name: hostkidoutcome_txt
+    label: Hostkidoutcome_txt
+    column: hostkidoutcome_txt
+    description: ""
+  - name: addnotes
+    label: Addnotes
+    column: addnotes
+    description: ""
+  - name: scite1
+    label: Scite1
+    column: scite1
+    description: ""
+  - name: scite2
+    label: Scite2
+    column: scite2
+    description: ""
+  - name: scite3
+    label: Scite3
+    column: scite3
+    description: ""
+  - name: dbsource
+    label: Dbsource
+    column: dbsource
+    description: ""
+  - name: related
+    label: Related
+    column: related
+    description: ""
+available_time_zones:
+  - America/Los_Angeles
+  - America/Chicago
+  - America/New_York
+  - Europe/London
+  - Europe/Paris
+  - Asia/Jerusalem
+  - Europe/Moscow
+  - Asia/Kolkata
+  - Asia/Shanghai
+  - Asia/Tokyo
+  - Australia/Sydney

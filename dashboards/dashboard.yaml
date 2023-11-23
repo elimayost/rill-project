@@ -1,0 +1,23 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: "dashboard"
+model: "gtd_model"
+default_time_range: ""
+smallest_time_grain: ""
+timeseries: ""
+measures:
+  - label: "Total Records"
+    expression: "count(*)"
+dimensions:
+  - name: iyear
+    label: Year
+    column: iyear
+    description: ""
+  - name: region
+    label: Region
+    column: region_txt
+    description: ""
+  - name: country
+    label: Country
+    column: country_txt
+    description: ""
